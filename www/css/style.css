@@ -1,0 +1,59 @@
+/* Empty. Add your own CSS if you like */
+
+/* Generic */
+.smallHandle {
+  width: 17px !important;
+  height: 17px !important;
+}
+.smallTrack {
+  width: 41px !important;
+  height: 21px !important;
+}
+/* Generic */
+
+/* Splash */
+.splash {
+  width: 100%;
+}
+/* Splash */
+
+/* Login */
+.login-header {
+  background-image: url('../img/0b_splash_screen.png');
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-buttonContainer {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.login-button {
+  background-color: #325c80;
+  border-color: #325c80;
+  border-radius: 0;
+  color: white;
+  width: 80%;
+}
+.login-optionsContainer {
+  display: block;
+  padding-left: 10%;
+  margin-top: 30px;
+  padding-right: 10%;
+}
+.login-rememberLabel {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.login-forgot {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  float: right;
+  text-decoration: none;
+}
+/* Login */
