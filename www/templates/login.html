@@ -3,25 +3,25 @@
   <div class="login-header">
   </div>
 
-  <div class="list login-form">
+  <form class="list login-form" ng-submit="submit()">
 
     <label class="item item-input">
       <i class="icon ion-person placeholder-icon"></i>
-      <input type="text" placeholder="username"/>
+      <input type="text" placeholder="username" ng-model="login.username"/>
     </label>
 
     <label class="item item-input">
       <i class="icon ion-key placeholder-icon"></i>
-      <input type="password" placeholder="password"/>
+      <input type="password" placeholder="password" ng-model="login.password"/>
     </label>
 
     <div class="login-buttonContainer">
-      <button class="button login-button">Login</button>
+      <button type="submit" class="button login-button">Login</button>
     </div>
 
     <div class="login-optionsContainer">
       <label class="toggle">
-        <input type="checkbox">
+        <input type="checkbox" ng-model="login.remember">
         <div class="track smallTrack">
           <div class="handle smallHandle"></div>
         </div>
@@ -30,6 +30,6 @@
       <a class="login-forgot" href="#">Forgot Password?</a>
     </div>
 
-  </div>
+  </form>
 
 </ion-view>

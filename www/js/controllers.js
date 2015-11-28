@@ -4,7 +4,9 @@ angular.module('starter.controllers', [])
   $timeout( function () { $state.go('login'); }, 3000);
 })
 .controller('LoginCtrl', function($scope) {
-
+  $scope.submit = function () {
+    console.log($scope.login);
+  };
 })
 .controller('DashCtrl', function($scope) {})
 
