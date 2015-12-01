@@ -1,5 +1,28 @@
 angular.module('starter.services', [])
 
+// This is a test user service, it holds relevant data the test user might enter
+// In the future, this may connect to an API using the $http service
+.factory('User', function () {
+  var user = {
+    username: '',
+    password: ''
+  }
+  var mozilla = {
+    username: '',
+    password: ''
+  };
+  var pearson = {
+    username: '',
+    password: ''
+  };
+
+  return {
+    user: user,
+    mozilla: mozilla,
+    pearson: pearson
+  };
+})
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 

@@ -1,13 +1,113 @@
 /* Empty. Add your own CSS if you like */
 
 /* Generic */
+/* Overrides the title to match the font in the reference screens. */
+.title {
+  color: white;
+  font-weight: bold !important;
+}
+/* Overrides the navbar to match the designated color in reference screens. */
+.navbar {
+  background-color: #325c80;
+}
+/* Overrides the navicon to match the color in reference screens. */
+.ion-navicon {
+  color: #5aaafa !important;
+}
+/* Overrides the button switches to match the size in the reference screens. */
 .smallHandle {
   width: 17px !important;
   height: 17px !important;
 }
+/* Overrides the button switches to match the size in the reference screens. */
 .smallTrack {
   width: 41px !important;
   height: 21px !important;
+}
+/* Overrides the secondary buttons to match the designated color in reference screens. */
+.secondary-buttons > button {
+  color: #5aaafa !important;
+}
+/* Overrides the back button to match the designated color in reference screens. */
+.back-button {
+  color: #5aaafa !important;
+}
+/* Overrides the generic buttons to match the designated color in the reference screens. */
+.button {
+  border-radius: 0px;
+  background-color: #325c80;
+  border-color: #325c80;
+  color: white;
+  font-weight: bold;
+}
+/* Overrides to make certain buttons smaller like in the reference screens. */
+.buttonShort {
+  min-height: 0;
+  height: 7vh;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* Overrides ionic divs, centers their content via text-align */
+.centered {
+  text-align: center;
+}
+/* Overrides content divs for full width. */
+.contentNoPadding {
+  padding-left: 0vw !important;
+  padding-right: 0vw !important;
+}
+/* Overrides content divs for larger padding.  */
+.contentPadding {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+/* Overrides for more space underneath, generally used for div.row */
+.marginBottom {
+  margin-bottom: 2vh !important;
+}
+/* Overrides for more space above, generally used for div.row */
+.marginTop {
+  margin-top: 2vh !important;
+}
+.horizontalPadding {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+/* Creates a square box, usually used for placeholders for images. */
+.greySquare {
+  background-color: #f5f5f5;
+  text-align: center;
+  height: 40vw;
+  padding-top: 15vw;
+}
+/* Overrides usually for greySquare box divs, to make them bigger. */
+.largeSquare {
+  height: 60vw;
+  padding-top: 25vw;
+}
+/* Bolds and slightly enlargens text. */
+.bold {
+  font-size: 1.05em;
+  font-weight: bold;
+}
+/* Creates font for header text like in reference screens. */
+.headerText {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+}
+/* Generic full width forms */
+.form {
+  height: 60vh;
+  background-color: #efeff1;
+}
+.form > label {
+  margin-top: 1vh;
+}
+/* Overrides for inputs in forms that need bigger input. */
+.largeInput {
+  height: 8vh !important;
+  font-size: 1.2em !important;
 }
 /* Generic */
 
@@ -19,46 +119,26 @@
   background-position: center;
   background-size: cover;
 }
+.splashLoadingIcon {
+  position: absolute;
+  top: 49vh;
+  left: 46vw;
+}
 /* Splash */
 
 /* Login */
-.login-form {
-  height: 60%;
-  background-color: #efeff1;
-}
-.login-form > label {
-  margin-top: 5px;
-}
 .login-header {
+  background-color: #325c80;
   background-image: url('../img/0b_splash_screen.png');
-  height: 40%;
+  height: 40vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-.login-buttonContainer {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-}
-.login-button {
-  background-color: #325c80;
-  border-color: #325c80;
-  border-radius: 0;
-  color: white;
-  width: 80%;
-}
-.login-optionsContainer {
-  display: block;
-  padding-left: 10%;
-  margin-top: 30px;
-  padding-right: 10%;
+  background-size: 55vh;
 }
 .login-rememberLabel {
   display: inline-block;
   vertical-align: top;
   font-size: 12px;
-  margin-top: 2px;
 }
 .login-forgot {
   display: inline-block;
@@ -67,4 +147,40 @@
   float: right;
   text-decoration: none;
 }
+.login-error {
+  width: 100vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: #efeff1;
+}
+.login-error > * {
+  display: block;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  text-align: center;
+}
+.login-error-header {
+  color: red;
+  font-weight: bold;
+  font-size: 1.15em;
+}
 /* Login */
+/* Loading Screen */
+.loading-container {
+  opacity: 0.5 !important;
+  background-color: white;
+}
+.loadingContainer {
+  height: 100vh;
+  padding-top: 50vh;
+}
+.loadingIcon {
+  font-size: 5em;
+  margin-top: 50vh;
+  opacity: 1 !important;
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+/* Loading Screen */

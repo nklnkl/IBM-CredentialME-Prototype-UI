@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('credentialme', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('credentialme', ['ionic', 'starter.controllers', 'starter.services', 'ngAnimate'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -39,8 +39,32 @@ angular.module('credentialme', ['ionic', 'starter.controllers', 'starter.service
 
   .state('login', {
     url: '/login',
-    templateUrl: 'templates/login.html',
+    templateUrl: 'templates/login-form.html',
     controller: 'LoginCtrl'
+  })
+
+  .state('grantAccess', {
+    url: '/grantaccess',
+    templateUrl: 'templates/login-access.html',
+    controller: 'GrantAccessCtrl'
+  })
+
+  .state('mozillaAccess', {
+    url: '/mozillaaccess',
+    templateUrl: 'templates/login-mozilla.html',
+    controller: 'MozillaAccessCtrl'
+  })
+
+  .state('pearsonAccess', {
+    url: '/pearsonaccess',
+    templateUrl: 'templates/login-pearson.html',
+    controller: 'PearsonAccessCtrl'
+  })
+
+  .state('streams', {
+    url: '/streams',
+    templateUrl: 'templates/streams.html',
+    controller: 'StreamsCtrl'
   })
 
   // setup an abstract state for the tabs directive

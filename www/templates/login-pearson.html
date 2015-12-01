@@ -1,0 +1,39 @@
+<ion-view hide-nav-bar="false" view-title="Login to Pearson" hide-back-button="false">
+
+    <section class="content has-header">
+
+      <div class="row marginBottom marginTop">
+        <div class="col-20"></div>
+        <div class="col greySquare largeSquare">
+          PEARSON</br>LOGO
+        </div>
+        <div class="col-20"></div>
+      </div>
+
+      <div class="row">
+        <span class="col headerText">
+          Grant Access to Pearson Account
+        </span>
+      </div>
+
+      <form class="list form" ng-submit="submit()">
+
+        <label class="item item-input">
+          <i class="icon ion-person placeholder-icon"></i>
+          <input type="text" class="largeInput" placeholder="pearson username" ng-model="login.username"/>
+        </label>
+
+        <label class="item item-input">
+          <i class="icon ion-key placeholder-icon"></i>
+          <input type="password" class="largeInput" placeholder="pearson password" ng-model="login.password"/>
+        </label>
+
+        <div class="row horizontalPadding marginBottom">
+          <button type="submit" class="button button-full">Login</button>
+        </div>
+
+      </form>
+
+    </section>
+
+</ion-view>

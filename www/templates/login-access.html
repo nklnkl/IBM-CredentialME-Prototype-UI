@@ -1,0 +1,58 @@
+<ion-view hide-nav-bar="false" view-title="Grant Access" hide-back-button="true">
+
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon icon button-positive" ng-click="skip()">
+      Skip
+    </button>
+  </ion-nav-buttons>
+
+    <section class="content contentPadding has-header">
+
+      <div class="row">
+        <div class="col">
+          <h5 class="bold">Grant this app access to Mozilla and Pearson.</h5>
+          <p>This app requires grant access to these systems so we can provide you with proper contents and information based on your knowledge from both services.</p>
+          <p>Note: Once you've granted access, you'll be enable to access this app.</p>
+        </div>
+      </div>
+
+      <div class="row marginBottom">
+        <div class="col greySquare">
+          MOZILLA<br/>LOGO
+        </div>
+        <div class="col-10"></div>
+        <div class="col greySquare">
+          PEARSON<br/>LOGO
+        </div>
+      </div>
+
+      <div class="row marginBottom">
+        <button class="button buttonShort col" ng-click="mozilla()" ng-hide="mozillaGranted">
+          Grant Access
+        </button>
+        <button class="button buttonShort col" ng-show="mozillaGranted">
+          Granted
+        </button>
+        <div class="col-10"></div>
+        <button class="button buttonShort col" ng-click="pearson()" ng-hide="pearsonGranted">
+          Grant Access
+        </button>
+        <button class="button buttonShort col" ng-show="pearsonGranted">
+          Granted
+        </button>
+      </div>
+
+      <div class="row marginTop" ng-show="granted">
+        <span class="bold">
+          Thanks for granting access. Now you'll be able to use all features of this app.
+        </span>
+      </div>
+      <div class="row" ng-show="granted">
+        <button class="button button-full" ng-click="continue()">
+          Continue
+        </button>
+      </div>
+
+    </section>
+
+</ion-view>
